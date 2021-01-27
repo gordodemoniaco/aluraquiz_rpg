@@ -1,7 +1,7 @@
 {
     "bg":"imgs/background.jpg",
-    "title": "Quiz de RPG",
-    "description": "Descrição do Quiz",
+    "title": "Quiz de RPG's de Mesa",
+    "description": "Vamos descobrir o quanto você sabe sobre a cultura dos RPG's de Mesa?",
     "questions": [],
     "external": [],
     "theme":{

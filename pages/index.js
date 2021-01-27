@@ -25,24 +25,22 @@ export const QuizContainter = styled.div`
 `;
 
 export default function Home() {
-  const router = useRouter();
-  const [name, setName] = React.useState('');
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainter>
         <Widget>
           <Widget.Header>
-            <h1>RPG's de Mesa</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p> texto exemplo descrição generica</p>
+            <p>{db.description} </p>
           </Widget.Content>
         </Widget>
         <Widget>
           
           <Widget.Content>
-            <h1>Quizes</h1>
-            <p>texto exemplo descrição generica</p>
+            <h1>Quizes da Galera</h1>
+            <p> </p>
           </Widget.Content>
         </Widget>
         <Footer />

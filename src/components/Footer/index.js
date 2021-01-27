@@ -23,6 +23,9 @@ const FooterWrapper = styled.footer`
       text-decoration: underline;
     }
   }
+  p {
+    color: white;
+  }
 `;
 
 export default function Footer(props) {
