@@ -1,0 +1,21 @@
+{
+    "bg":"imgs/background.jpg",
+    "title": "Quiz de RPG",
+    "description": "Descrição do Quiz",
+    "questions": [],
+    "external": [],
+    "theme":{
+        "colors": {
+            "primary": "#4B0082",
+            "secondary": "#B8860B",
+            "mainBg": "#191970",
+            "bordercolor": "#4682B4",
+            "titlecolor": "#F0E68C",
+            "textcolor": "#F8F8FF",
+            "contrastText": "#FFFFFF",
+            "wrong": "#d50000",
+            "sucess": "#0d47a1"
+        },
+        "borderRadius": "4px"
+    }
+}
