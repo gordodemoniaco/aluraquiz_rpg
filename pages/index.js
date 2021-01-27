@@ -27,7 +27,9 @@ export const QuizContainter = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      
       <QuizContainter>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
             <h1>{db.title}</h1>
@@ -45,7 +47,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainter>
-      <GitHubCorner projectUrl="https://github.com/gordodemoniaco"/>
+      <GitHubCorner projectUrl="https://github.com/gordodemoniaco/aluraquiz-rpg"/>
     </QuizBackground>
   );
 }
