@@ -4,9 +4,10 @@ import styled from 'styled-components';
 const QuizBackground = styled.div`
   width: 100%;
   height:100%;
+  flex: 1;
   background-size: cover;
   background-position: center;
-  position: absolute;
+  position: relative;
   background-image: url(${({ backgroundImage }) => backgroundImage});
   background-color: ${({ theme }) => theme.colors.mainBg};
   
