@@ -1,5 +1,5 @@
 {
-    "bg":"imgs/background.jpg",
+    "bg":"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/053bae63-7a8e-416f-b3e9-d65a7f485fce/dbfnvuw-8029e989-cfb7-4e34-bb4a-9af3a68a87bf.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMDUzYmFlNjMtN2E4ZS00MTZmLWIzZTktZDY1YTdmNDg1ZmNlXC9kYmZudnV3LTgwMjllOTg5LWNmYjctNGUzNC1iYjRhLTlhZjNhNjhhODdiZi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.mGtqcRBMMok9Mbgm4XLku4HpvCd85optQe2SiR0CqyE",
     "title": "AluraQuiz - RPG's de Mesa",
     "description": "Vamos descobrir o quanto você sabe sobre a cultura dos RPG's de Mesa?",
     "questions": [
@@ -32,15 +32,12 @@
     "external": [],
     "theme":{
         "colors": {
-            "primary": "#4B0082",
-            "secondary": "#B8860B",
+            "primary": "#FFD700",
+            "secondary": "#4B0082",
             "mainBg": "#191970",
-            "bordercolor": "#4682B4",
-            "titlecolor": "#F0E68C",
-            "textcolor": "#F8F8FF",
             "contrastText": "#FFFFFF",
             "wrong": "#d50000",
-            "sucess": "#0d47a1"
+            "sucess": "#00FF00"
         },
         "borderRadius": "4px"
     }

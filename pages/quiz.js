@@ -33,9 +33,9 @@ function QuestionWidget({
     <Widget>
       <Widget.Header>
         {/* <BackLinkArrow href="/" /> */}
-        <h3>
+        <h1>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
-        </h3>
+        </h1>
       </Widget.Header>
 
       <img
@@ -69,7 +69,7 @@ function QuestionWidget({
                 htmlFor={alternativeId}
               >
                 <input
-                  style={{ display: 'none' }}
+                  // style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
                   type="radio"

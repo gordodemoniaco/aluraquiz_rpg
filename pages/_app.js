@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable react/react-in-jsx-scope */
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import React from 'react';
 import Head from 'next/head';
 import db from '../db.json';
 
