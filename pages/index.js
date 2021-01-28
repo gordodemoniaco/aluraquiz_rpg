@@ -1,6 +1,4 @@
 /* eslint-disable func-names */
-/* eslint-disable no-console */
-/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
@@ -11,12 +9,12 @@ import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
-import Button from '../src/components/Button';
-import Input from '../src/components/Input';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
-export const QuizContainter = styled.div`
-  width:100%;
+const QuizContainer = styled.div`
+  width: 100%;
   max-width: 350px;
   padding-top: 45px;
   margin: auto 10%;
@@ -29,48 +27,47 @@ export const QuizContainter = styled.div`
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
-  console.log('retorno do useState', name, setName);
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>{db.title}</title>
       </Head>
-      <QuizContainter>
+      <QuizContainer>
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>{db.name}</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
-            <form onSubmit={function (e) {
-              e.preventDefault();
+            <form onSubmit={function (infosDoEvento) {
+              infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
-              console.log('Submissão');
             }}
             >
               <Input
-                name="nomeUsuario"
-                onChange={(e) => setName(e.target.value)}
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
                 placeholder="Escreva seu Nome"
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
-                {`Jogar: ${name}`}
+                {`Jogar ${name}`}
               </Button>
             </form>
           </Widget.Content>
         </Widget>
         <Widget>
-
           <Widget.Content>
             <h1>Quizes da Galera</h1>
-            <p> </p>
+
+            <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
         <Footer />
-      </QuizContainter>
-      <GitHubCorner projectUrl="https://github.com/gordodemoniaco/aluraquiz-rpg" />
+      </QuizContainer>
+      <GitHubCorner projectUrl="https://github.com/gordodemoniaco" />
     </QuizBackground>
   );
 }

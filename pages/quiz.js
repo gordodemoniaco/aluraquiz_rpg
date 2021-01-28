@@ -69,7 +69,7 @@ function QuestionWidget({
                 htmlFor={alternativeId}
               >
                 <input
-                  // style={{ display: 'none' }}
+                  style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
                   type="radio"
@@ -79,9 +79,6 @@ function QuestionWidget({
             );
           })}
 
-          {/* <pre>
-            {JSON.stringify(question, null, 4)}
-          </pre> */}
           <Button type="submit">
             Confirmar
           </Button>
