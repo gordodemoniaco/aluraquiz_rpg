@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import db from '../../../db.json';
 
 const Widget = styled.div`
   margin-top: 24px;
@@ -13,7 +14,7 @@ const Widget = styled.div`
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.primary};
   }
   h2{
     font-size: 16px;
@@ -27,7 +28,7 @@ const Widget = styled.div`
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.secondary};
 
   }
   p {
@@ -67,8 +68,8 @@ Widget.Content = styled.div`
 Widget.Topic = styled.a`
   outline: 0;
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.contrastText};
-  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  color: ${db.theme.colors.contrastText};
+  background-color: ${db.theme.colors.secondary};
   padding: 10px 15px;
   margin-bottom: 8px;
   cursor: pointer;

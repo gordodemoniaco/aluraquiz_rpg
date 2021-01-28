@@ -33,9 +33,9 @@ function QuestionWidget({
     <Widget>
       <Widget.Header>
         {/* <BackLinkArrow href="/" /> */}
-        <h1>
+        <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
-        </h1>
+        </h3>
       </Widget.Header>
 
       <img

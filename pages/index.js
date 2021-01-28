@@ -26,7 +26,7 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>{db.title}</h1>
+            <h3>{db.title}</h3>
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
