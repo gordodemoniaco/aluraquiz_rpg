@@ -15,9 +15,9 @@ const GlobalStyle = createGlobalStyle`
     /* New styles */
     display: flex;
     flex-direction: column;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', 'sans-serif';
     // Deixa branco no começo
-    color: ${({ theme }) => theme.colors.contrastText};
+    color: ${db.theme.colors.contrastText};
   }
   html, body {
     min-height: 100vh;
