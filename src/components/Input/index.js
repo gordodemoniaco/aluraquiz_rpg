@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const InputBase = styled.input`
-  width: 100%;
+  width: 90%;
   padding: 15px;
   font-size: 14px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
